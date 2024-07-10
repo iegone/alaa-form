@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="dashboard">
+        <h2>إدخال البيانات</h2>
+        <label for="company-name-ar">اسم الشركة (عربي):</label>
+        <input type="text" id="company-name-ar" placeholder="مشاريع إشراقة طاقة المتحدة ش م م">
+        
+        <label for="company-name-en">اسم الشركة (إنجليزي):</label>
+        <input type="text" id="company-name-en" placeholder="Eshraqa Energy United Projects LLC">
+        
+        <label for="cr-number">C.R:</label>
+        <input type="text" id="cr-number" placeholder="1548822">
+        
+        <label for="box-number">BOX:</label>
+        <input type="text" id="box-number" placeholder="117">
+        
+        <label for="pc-number">P.C:</label>
+        <input type="text" id="pc-number" placeholder="124">
+        
+        <label for="nationality">الجنسية:</label>
+        <input type="text" id="nationality" placeholder="الجنسية">
+        <label for="name">اسم العامل:</label>
+        <input type="text" id="name" placeholder="علاء ابراهيم">
+        <label for="id-number">رقم البطاقة:</label>
+        <input type="text" id="id-number" placeholder="135776895">
+        
+        <button onclick="updateCompanyDetails()">تحديث البيانات</button>
+    </div>
+    <div class="container">
+        <header>
+            <div class="company-info">
+                <div>C.R : <span id="cr-number-display">1548822</span></div>
+                <div>BOX : <span id="box-number-display">117</span></div>
+                <div>P.C:<span id="pc-number-display">124</span></div>
+                <div>S.of Oman</div>
+            </div>
+            <h1 id="company-name-display-ar">مشاريع إشراقة طاقة المتحدة ش م م</h1>
+            <h2 id="company-name-display-en">Eshraqa Energy United Projects LLC</h2>
+        </header>
+        <main>
+            <div class="greeting"> المدير الفاضل / مدير بنك مسقط المحترم،،،</div>
+            <div class="greeting">تحية طيبة وبعد،،،</div>
+            <br>
+            <br>
+            <div class="subject">الموضوع: فتح حساب شخصي</div>
+            <p>بالإشارة إلى الموضوع أعلاه نحن <span id="company-name-display-ar-2">مشاريع إشراقة طاقة المتحدة ش م م</span> والمقيدة بالسجل التجاري رقم (<span id="commercial-number-display">1548822</span>) نرجو التكرم بفتح حساب شخصي للمدعو / <span id="name-display">محمد ابراهيم محمد العوضي على</span> الجنسية <span id="nationality-display">مصري</span> والذي يحمل بطاقة مقيم رقم (<span id="id-number-display">135776895</span>) حيث انه يتقاضي راتب قدره (350) ثلاثمائة وخمسون ريال عماني، ونود افادتكم بعنوانه كالتالي :</p>
+            <p>
+                اسم المنطقة --- الخوير 17/2<br>
+                رقم السكة --- 4103<br>
+                رقم المجمع --- 241<br>
+                رقم المبنى --- 193<br>
+                رقم الشقة --- 401
+            </p>
+            <p>لذا نرجو منكم تسهيل اجراءات فتح حساب شخصي للمدكور اعلاه ولكم جزيل الشكر</p>
+            <br>
+            <p class="subject">وتفضلوا بقبول فائق الاحترام والتقدير،،،</p>
+            <p id="company-name-display-ar-3" class="company-signature">مشاريع إشراقة طاقة المتحدة ش م م</p>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
